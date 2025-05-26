@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">    
+    <link rel="shortcut icon" href="images/products/vglam.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>By Valentina Glam Accesories</title>
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <!-- Sección de Categorías para By Valentina Glam Accesories -->
+<section class="section-container-categorias">
+    <div class="section-content">
+        <h2 class="section-title">EXPLORA NUESTRAS COLECCIONES</h2>
+        <div class="categories-grid">
+            <!-- Joyería -->
+            <div class="category-card">
+                <div class="category-content">
+                    <h3 class="category-title">JOYERÍA</h3>
+                    <p class="category-subtitle">elegancia glam</p>
+                </div>
+            </div>
+            
+            <!-- Relojes -->
+            <div class="category-card">
+                <div class="category-content">
+                    <h3 class="category-title">RELOJES</h3>
+                    <p class="category-subtitle">estilo único</p>
+                </div>
+            </div>
+            
+            <!-- Bolsos -->
+            <div class="category-card">
+                <div class="category-content">
+                    <h3 class="category-title">BOLSOS</h3>
+                    <p class="category-subtitle">tendencia 2024</p>
+                </div>
+            </div>
+            
+            <!-- Accesorios Cabello -->
+            <div class="category-card">
+                <div class="category-content">
+                    <h3 class="category-title">CABELLO</h3>
+                    <p class="category-subtitle">glamour instantáneo</p>
+                </div>
+            </div>
+            
+            <!-- Bisutería -->
+            <div class="category-card">
+                <div class="category-content">
+                    <h3 class="category-title">BISUTERÍA</h3>
+                    <p class="category-subtitle">piezas exclusivas</p>
+                </div>
+            </div>
+            
+            <!-- Lentes -->
+            <div class="category-card">
+                <div class="category-content">
+                    <h3 class="category-title">LENTES</h3>
+                    <p class="category-subtitle">estilo sofisticado</p>
+                </div>
+            </div>
+            
+            <!-- Colección VIP -->
+            <div class="category-card">
+                <div class="category-content">
+                    <h3 class="category-title">COLECCIÓN VIP</h3>
+                    <p class="category-subtitle">edición limitada</p>
+                </div>
+            </div>
+            
+            <!-- Novedades -->
+            <div class="category-card">
+                <div class="category-content">
+                    <h3 class="category-title">NOVEDADES</h3>
+                    <p class="category-subtitle">lo último en glam</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="product-grid"></div>
+ <!-- Ícono flotante del carrito -->
+<div id="mostrar-carrito" class="cart-icon">
+    🛒
+    <span class="cart-count">0</span>
+</div>
+
+<!-- Modal del carrito -->
+<div id="cartModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="cart-title">
+    <div class="cart-modal-content">
+        <button class="close-cart-modal" aria-label="Cerrar carrito">&times;</button>
+        <h2 id="cart-title">Tu carrito de compras 🛒</h2>
+
+        <div id="modal-carrito-items" class="carrito-items">
+            <!-- Los ítems del carrito se insertan dinámicamente aquí -->
+        </div>
+
+        <div class="carrito-total">
+            <strong>Total:</strong>
+            <span id="modal-total-precio">$0</span>
+        </div>
+
+        <div class="modal-buttons">
+            <button id="eliminar-todos-btn" class="vaciar-btn" title="Vaciar carrito">
+                🧹 Vaciar carrito
+            </button>
+            <button id="comprar-btn" class="comprar-btn" title="Realizar compra">
+                💳 Comprar
+            </button>
+        </div>
+    </div>
+</div>
+
+
+    <div id="footer-container"></div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="scripts/loadComponents.js"></script>
+    <script src="scripts/products.js"></script>
+    <script src="scripts/carrito.js"></script> <!-- Corregido el nombre del archivo -->
+</body>
+</html>
